@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Violeta Kastreva · ETH Zurich · Tokenisation &amp; Interpretability</title>
+  <meta name="description" content="Violeta Kastreva, MSc Computer Science student at ETH Zurich, researching how language models work: tokenisation, interpretability and LLM evaluation.">
+  <meta name="author" content="Violeta Kastreva">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://violeta-kastreva.github.io/">
+  <meta name="theme-color" content="#FBFAF7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141320" media="(prefers-color-scheme: dark)">
+
+  <!-- Social previews (LinkedIn, X, Slack, WhatsApp…) -->
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="Violeta Kastreva">
+  <meta property="og:title" content="Violeta Kastreva · ETH Zurich">
+  <meta property="og:description" content="MSc Computer Science at ETH Zurich. Research on tokenisation, mechanistic interpretability and LLM evaluation.">
+  <meta property="og:url" content="https://violeta-kastreva.github.io/">
+  <meta property="og:image" content="https://violeta-kastreva.github.io/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Violeta Kastreva">
+  <meta property="og:locale" content="en_GB">
+  <meta property="profile:first_name" content="Violeta">
+  <meta property="profile:last_name" content="Kastreva">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@VKastreva">
+  <meta name="twitter:creator" content="@VKastreva">
+  <meta name="twitter:title" content="Violeta Kastreva · ETH Zurich">
+  <meta name="twitter:description" content="MSc Computer Science at ETH Zurich. Research on tokenisation, mechanistic interpretability and LLM evaluation.">
+  <meta name="twitter:image" content="https://violeta-kastreva.github.io/assets/og.jpg">
+
+  <!-- Structured data: tells search engines who this page is about -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "url": "https://violeta-kastreva.github.io/",
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "https://violeta-kastreva.github.io/#person",
+      "name": "Violeta Kastreva",
+      "url": "https://violeta-kastreva.github.io/",
+      "image": "https://violeta-kastreva.github.io/assets/portrait-960.jpg",
+      "jobTitle": "MSc Computer Science student and researcher",
+      "affiliation": { "@type": "CollegeOrUniversity", "name": "ETH Zurich", "url": "https://ethz.ch" },
+      "alumniOf": { "@type": "CollegeOrUniversity", "name": "Sofia University \"St. Kliment Ohridski\"", "url": "https://www.uni-sofia.bg" },
+      "nationality": "Bulgarian",
+      "knowsAbout": ["Tokenisation", "Mechanistic interpretability", "Large language models", "LLM evaluation", "Natural language processing", "Computational complexity", "Machine learning"],
+      "award": ["Google Generation Scholarship (EMEA) 2025", "Student of the Year, Sofia University 2025", "Gold medal (team), Open International Mathematical Olympiad for University Students 2024"],
+      "sameAs": [
+        "https://github.com/violeta-kastreva",
+        "https://www.linkedin.com/in/violetakastreva/",
+        "https://x.com/VKastreva"
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org", "@type": "ScholarlyArticle",
+      "headline": "Tokenisation over Bounded Alphabets is Hard",
+      "author": [{"@id": "https://violeta-kastreva.github.io/#person"}, {"@type": "Person", "name": "Philip Whittington"}, {"@type": "Person", "name": "Dennis Komm"}, {"@type": "Person", "name": "Tiago Pimentel"}],
+      "datePublished": "2026", "isPartOf": {"@type": "PublicationEvent", "name": "ICLR 2026"},
+      "url": "https://openreview.net/forum?id=Xhf9YqwlM4"
+    },
+    {
+      "@context": "https://schema.org", "@type": "ScholarlyArticle",
+      "headline": "How Correct Is Your Answer? A Semantic Correctness Framework for Open QA Evaluation",
+      "author": [{"@type": "Person", "name": "Elitsa Yotkova"}, {"@id": "https://violeta-kastreva.github.io/#person"}, {"@type": "Person", "name": "Petar Velkov"}, {"@type": "Person", "name": "Hristo Boyanov"}, {"@type": "Person", "name": "Dimitar Dimitrov"}, {"@type": "Person", "name": "Preslav Nakov"}, {"@type": "Person", "name": "Ivan Koychev"}],
+      "datePublished": "2026", "isPartOf": {"@type": "PublicationEvent", "name": "Findings of EMNLP 2026"},
+      "url": "https://arxiv.org/abs/2609.01369"
+    },
+    {
+      "@context": "https://schema.org", "@type": "ScholarlyArticle",
+      "headline": "Lightweight Detection of LLM-Generated Code via Stylometric Signals",
+      "author": [{"@type": "Person", "name": "E. Yotkova"}, {"@id": "https://violeta-kastreva.github.io/#person"}, {"@type": "Person", "name": "D. Dimitrov"}, {"@type": "Person", "name": "I. Koychev"}, {"@type": "Person", "name": "P. Nakov"}],
+      "datePublished": "2026", "isPartOf": {"@type": "PublicationEvent", "name": "SemEval 2026"},
+      "url": "https://aclanthology.org/2026.semeval-1.275/"
+    },
+    {
+      "@context": "https://schema.org", "@type": "ScholarlyArticle",
+      "headline": "Byte n-gram Encoding",
+      "author": [{"@type": "Person", "name": "M. Tomek"}, {"@type": "Person", "name": "P. Whittington"}, {"@id": "https://violeta-kastreva.github.io/#person"}, {"@type": "Person", "name": "C. Meister"}, {"@type": "Person", "name": "D. Komm"}, {"@type": "Person", "name": "T. Pimentel"}],
+      "datePublished": "2026", "isPartOf": {"@type": "PublicationEvent", "name": "TokShop workshop at COLM 2026"}
+    }
+  ]
+  </script>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=3">
+  <script>
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="#top">Violeta Kastreva</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#experience">Experience</a>
+      <a href="#awards">Awards</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#projects">Projects</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+      <svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero wrap">
+    <div class="hero-text">
+      <p class="eyebrow">MSc Computer Science · ETH Zurich</p>
+      <h1>Violeta Kastreva</h1>
+      <p class="lede">
+        I'm interested in understanding how language models work.
+      </p>
+      <p>
+        I am a master's student at ETH Zurich (major in Machine Intelligence) and a research fellow
+        at SPAR, where I work on model symmetries as a tool for interpretability. Before that I did my
+        BSc in Computer Science at Sofia University (top 1% of my cohort), working with Prof. <a class="quiet" href="https://mbzuai.ac.ae/academics/faculty-directory/preslav-nakov">Preslav Nakov</a>
+        and Prof. <a class="quiet" href="https://www.fmi.uni-sofia.bg/en/faculty/ivan-koychev">Ivan Koychev</a> on LLM evaluation. I also spent a summer at ETH in Prof. <a class="quiet" href="https://people.inf.ethz.ch/dkomm/">Dennis Komm</a>'s
+        Algorithms &amp; Didactics lab, where together with <a class="quiet" href="https://tpimentelms.github.io/">Tiago Pimentel</a> we proved that optimal
+        tokenisation is NP-complete. This summer I was a quantitative trading intern at IMC in Amsterdam.
+      </p>
+      <p>
+        I came to computer science through mathematics olympiads. I have competed internationally for Sofia University and spent three years teaching
+        mathematics and programming to more than 350 students. Outside research, I like drawing,
+        travelling, reading, video games and cats.
+      </p>
+      <div class="links">
+        <a class="btn btn-primary" href="assets/Violeta_Kastreva_CV.pdf">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg>
+          CV
+        </a>
+        <a class="btn js-mail" href="#contact" data-u="vkastreva" data-d="ethz.ch">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>
+          Email
+        </a>
+        <a class="btn" rel="me" href="https://github.com/violeta-kastreva">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+          GitHub
+        </a>
+        <a class="btn" rel="me" href="https://www.linkedin.com/in/violetakastreva/">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.2v.1M12 17v-3.7c0-1.6 1-2.6 2.3-2.6s2 .9 2 2.6V17M12 10.5V17"/></svg>
+          LinkedIn
+        </a>
+        <a class="btn" rel="me" href="https://x.com/VKastreva">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h4.6L20 20h-4.6z"/><path d="M19.5 4l-6.6 7.5M4.5 20l6.6-7.5"/></svg>
+          X
+        </a>
+      </div>
+    </div>
+    <figure class="portrait">
+      <img fetchpriority="high" src="assets/portrait-480.jpg" srcset="assets/portrait-480.jpg 480w, assets/portrait-960.jpg 960w"
+           sizes="(max-width: 760px) 70vw, 340px" width="480" height="576"
+           alt="Violeta Kastreva smiling on a bridge over a canal in Venice">
+    </figure>
+  </section>
+
+  <section class="wrap stats" aria-label="At a glance">
+    <div class="stat"><span class="num">4</span><span class="lbl">papers incl. ICLR &amp; EMNLP</span></div>
+    <div class="stat"><span class="num">3×</span><span class="lbl">Student of the Year</span></div>
+    <div class="stat"><span class="num">3</span><span class="lbl">merit scholarships</span></div>
+    <div class="stat"><span class="num">9</span><span class="lbl">university courses taught</span></div>
+  </section>
+
+  <!-- ============ NEWS ============ -->
+  <section class="wrap section" id="news">
+    <h2>News</h2>
+    <div class="news">
+      <div class="news-year">
+        <span class="news-y">2026</span>
+        <ol class="news-list">
+          <li class="is-latest"><span class="news-m">Oct</span><p><em>Byte n-gram Encoding</em> appeared at <strong>TokShop</strong>, a workshop at <strong>COLM 2026</strong>.</p></li>
+          <li><span class="news-m">Sep</span><p>Started my <strong>MSc at ETH Zurich</strong> and joined <strong>SPAR</strong> as a research fellow.</p></li>
+          <li><span class="news-m">Sep</span><p><em>How Correct Is Your Answer?</em> is out on arXiv, accepted to <strong>EMNLP 2026 Findings</strong>.</p></li>
+          <li><span class="news-m">Jul</span><p>Graduated with a BSc in Computer Science from Sofia University.</p></li>
+          <li><span class="news-m">Jun</span><p>Started a quantitative trading internship at <strong>IMC Trading</strong> in Amsterdam.</p></li>
+          <li><span class="news-m">May</span><p>Named Student of the Year in Mathematics &amp; Informatics for the second time.</p></li>
+          <li><span class="news-m">Apr</span><p><em>Tokenisation over Bounded Alphabets is Hard</em> was presented at <strong>ICLR 2026</strong>.</p></li>
+        </ol>
+      </div>
+      <div class="news-year">
+        <span class="news-y">2025</span>
+        <ol class="news-list">
+          <li><span class="news-m">Oct</span><p>Received the <strong>Google Generation Scholarship</strong> (EMEA).</p></li>
+          <li><span class="news-m">Jul</span><p>Joined <strong>ETH Zurich</strong> as a Summer Student Research Fellow in Dennis Komm's group.</p></li>
+          <li><span class="news-m">May</span><p>Named <strong>Student of the Year</strong> at Sofia University.</p></li>
+        </ol>
+      </div>
+      <div class="news-year">
+        <span class="news-y">2024</span>
+        <ol class="news-list">
+          <li><span class="news-m">May</span><p>Named <strong>Student of the Year</strong> in Mathematics &amp; Informatics at Sofia University.</p></li>
+          <li><span class="news-m">Apr</span><p>Won <strong>team gold</strong> and <strong>individual silver</strong> at OMOUS, the international mathematical olympiad for university students, among 600+ competitors from 20+ countries.</p></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESEARCH ============ -->
+  <section class="wrap section" id="research">
+    <h2>Research interests</h2>
+    <div class="interests">
+      <article class="interest">
+        <h3>Tokenisation &amp; theory of LMs</h3>
+        <p>How hard is it to find a good tokeniser?</p>
+      </article>
+      <article class="interest">
+        <h3>Mechanistic interpretability</h3>
+        <p>When do two models compute the same thing, and how can we tell?</p>
+      </article>
+      <article class="interest">
+        <h3>LLM evaluation</h3>
+        <p>How do we know when a model's answer is actually right?</p>
+      </article>
+      <article class="interest interest-open">
+        <h3>…and everything else</h3>
+        <p>I am curious about almost everything in ML and theoretical CS, and always happy to explore a new direction. If you have an interesting problem, I'd love to hear about it.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ PUBLICATIONS ============ -->
+  <section class="wrap section" id="publications">
+    <h2>Publications</h2>
+    <p class="note">* equal contribution</p>
+    <ol class="pubs">
+      <li class="pub">
+        <div class="venue"><span class="tag tag-main">ICLR 2026</span></div>
+        <div>
+          <h3>Tokenisation over Bounded Alphabets is Hard</h3>
+          <p class="authors"><b>Violeta Kastreva</b>*, P. Whittington*, D. Komm, T. Pimentel</p>
+          <p class="abstract">Shows that finding an optimal tokeniser is NP-complete for both direct and bottom-up (BPE-style) tokenisation, even when the alphabet is binary or unary, and that greedy BPE-style tokenisation has an unbounded approximation ratio over unary alphabets.</p>
+          <p class="pub-links">
+            <a href="https://openreview.net/forum?id=Xhf9YqwlM4">Paper</a>
+            <a href="https://violeta-kastreva.github.io/tokenisation-over-bounded-alphabets-is-hard/">Project page</a>
+          </p>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="venue"><span class="tag tag-main">EMNLP 2026</span><span class="sub">Findings</span></div>
+        <div>
+          <h3>How Correct Is Your Answer? A Semantic Correctness Framework for Open QA Evaluation</h3>
+          <p class="authors">E. Yotkova*, <b>Violeta Kastreva</b>*, P. Velkov, H. Boyanov, D. Dimitrov, P. Nakov, I. Koychev</p>
+          <p class="abstract">A framework and taxonomy for judging the semantic correctness of open-ended answers, going beyond string matching when evaluating question-answering systems.</p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2609.01369">Paper</a>
+            <a href="https://elitsay.github.io/EMNLP-2026-How-Correct-Is-Your-Answer-/">Project page</a>
+          </p>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="venue"><span class="tag">SemEval 2026</span><span class="sub">ACL workshop</span></div>
+        <div>
+          <h3>Lightweight Detection of LLM-Generated Code via Stylometric Signals</h3>
+          <p class="authors">E. Yotkova*, <b>Violeta Kastreva</b>*, D. Dimitrov, I. Koychev, P. Nakov</p>
+          <p class="abstract">A fast detector for machine-generated code built on stylometric features, AST-based structural cues and a custom programming-language identification pipeline.</p>
+          <p class="pub-links">
+            <a href="https://aclanthology.org/2026.semeval-1.275/">Paper</a>
+          </p>
+        </div>
+      </li>
+      <li class="pub">
+        <div class="venue"><span class="tag">TokShop</span><span class="sub">COLM 2026 workshop</span></div>
+        <div>
+          <h3>Byte <i>n</i>-gram Encoding</h3>
+          <p class="authors">M. Tomek, P. Whittington, <b>Violeta Kastreva</b>, C. Meister, D. Komm, T. Pimentel</p>
+          <p class="abstract">Generalises BPE to multi-symbol merges, improving compression while keeping downstream language-model performance comparable.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section class="wrap section" id="education">
+    <h2>Education</h2>
+    <ul class="timeline">
+      <li>
+        <div class="when">2026 – 2028</div>
+        <div class="what">
+          <h3>MSc in Computer Science <span class="at">ETH Zurich</span></h3>
+          <p>Major in Machine Intelligence, minor in Theoretical Computer Science.</p>
+        </div>
+      </li>
+      <li>
+        <div class="when">2022 – 2026</div>
+        <div class="what">
+          <h3>BSc in Computer Science <span class="at">Sofia University “St. Kliment Ohridski”</span></h3>
+          <p>GPA 5.88 / 6.00, top 1% of the cohort. Faculty of Mathematics and Informatics.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="wrap section" id="experience">
+    <h2>Experience</h2>
+
+    <h3 class="group">Research</h3>
+    <ul class="timeline">
+      <li>
+        <div class="when">Sep 2026 – Dec 2026</div>
+        <div class="what">
+          <h3>Research Fellow <span class="at">SPAR, Research Program for AI Risks · Zurich</span></h3>
+          <ul>
+            <li>Investigating function-preserving and data-dependent model symmetries as a tool for mechanistic interpretability.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">Nov 2025 – Jun 2026</div>
+        <div class="what">
+          <h3>Research Assistant <span class="at">Sofia University · with Prof. Preslav Nakov &amp; Prof. Ivan Koychev</span></h3>
+          <ul>
+            <li>Built claim-checking pipelines to flag AI-generated text and unsupported claims in research manuscripts.</li>
+            <li>Developed an LLM-generated code detector from stylometric features (SemEval, ACL 2026 workshop).</li>
+            <li>Worked on <span class="sc">Open-VEQA</span>, a multilingual and multimodal benchmark for open-ended visual question answering.</li>
+            <li>Studied when different transformers implement the same algorithm, as well as cross-seed representation alignment and downstream transfer in language models.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">Jul 2025 – Sep 2025</div>
+        <div class="what">
+          <h3>Summer Student Research Fellow <span class="at">ETH Zurich · Algorithms &amp; Didactics group, Prof. Dennis Komm</span></h3>
+          <ul>
+            <li>Proved NP-completeness of optimal direct and bottom-up tokenisation (ICLR 2026), including weak NP-completeness for unary alphabets.</li>
+            <li>Showed that greedy BPE-style tokenisation has an unbounded approximation ratio over unary alphabets.</li>
+            <li>Worked on the competitive ratio of unbounded online knapsack with removal, and joined a workshop on open problems with researchers from 5+ universities.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+
+    <h3 class="group">Industry</h3>
+    <ul class="timeline">
+      <li>
+        <div class="when">Jun 2026 – Aug 2026</div>
+        <div class="what">
+          <h3>Quantitative Trading Intern <span class="at">IMC Trading · Amsterdam</span></h3>
+          <ul>
+            <li>Developed machine-learning signals for systematic trading in Indian equities using large-scale market data.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">May 2025</div>
+        <div class="what">
+          <h3>Selected Participant <span class="at">Citadel Europe Datathon</span></h3>
+          <ul>
+            <li>Forecast energy-sector volatility from gasoline price signals with VAR models, Granger causality and ensemble learning.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">Mar 2024 – Apr 2024</div>
+        <div class="what">
+          <h3>Career Kickstarter, Technology <span class="at">Optiver · Amsterdam</span></h3>
+          <ul>
+            <li>Selective programme on technology in trading. Built a multi-asset trading exchange and order book (1k+ price levels, 10k+ trades) to explore market making.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">Nov 2023 – Mar 2025</div>
+        <div class="what">
+          <h3>Software Engineer <span class="at">Bulgarian National Television · Sofia</span></h3>
+          <ul>
+            <li>Built the search engine for the <a href="https://play.bnt.bg/">BNT Play</a><sup class="fn-ref"><a href="#fn-bnt" id="fn-bnt-ref" aria-label="Footnote 1">1</a></sup> streaming site, combining keyword (BM25) and semantic (FAISS) search with sub-50 ms latency.</li>
+            <li>Built a two-stage recommendation system (candidate generation and re-ranking) that raised engagement by 15%.</li>
+            <li>Designed Azure media-upload pipelines for 10,000+ videos and images, and backend services in TypeScript and PostgreSQL.</li>
+          </ul>
+          <p class="footnote" id="fn-bnt"><sup>1</sup> BNT Play is only available from Bulgarian IP addresses. <a href="#fn-bnt-ref" aria-label="Back to text">↩</a></p>
+        </div>
+      </li>
+      <li>
+        <div class="when">Jun 2023 – Sep 2023</div>
+        <div class="what">
+          <h3>Software Engineer Intern <span class="at">DXC Technology · Sofia</span></h3>
+          <ul>
+            <li>Chosen as team lead of a 10-intern cohort. Designed backend features in Java and Spring, coordinated integration and ran code reviews.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ AWARDS ============ -->
+  <section class="wrap section" id="awards">
+    <h2>Honours &amp; awards</h2>
+
+    <div class="awards-grid">
+      <div class="award-col">
+        <h3 class="group">Honours</h3>
+        <ul class="awards">
+          <li><span class="yr">2025</span><div><b>Student of the Year, Sofia University</b><p>Best Performing Student out of 15,000+ bachelor's, master's and PhD students.</p></div></li>
+          <li><span class="yr">2024, 2026</span><div><b>Student of the Year, Mathematics &amp; Informatics</b><p>Selected from over 1,200 students for olympiad results and academic excellence.</p></div></li>
+          <li><span class="yr">2024, 2025</span><div><b>“Alma Mater” Award, Sofia University</b><p>For achievements in computer science and mathematics, teaching, and representing the university internationally.</p></div></li>
+        </ul>
+
+        <h3 class="group">Scholarships</h3>
+        <ul class="awards">
+          <li><span class="yr">2025</span><div><b>Google Generation Scholarship (EMEA)</b><p>For outstanding performance in computer science and mathematics, and commitment to leadership and inclusion.</p></div></li>
+          <li><span class="yr">2025</span><div><b>Bending Spoons Women in STEM Scholarship</b><p>Top 20 across EMEA.</p></div></li>
+          <li><span class="yr">2024</span><div><b>Progress Software Women in Tech Scholarship</b><p>One of two women selected nationwide.</p></div></li>
+        </ul>
+      </div>
+
+      <div class="award-col">
+        <h3 class="group">Competitions &amp; medals</h3>
+        <ul class="medals">
+          <li><span class="medal gold" title="Gold">G</span><div><b>Open International Mathematical Olympiad for University Students (OMOUS), team</b><p>Gold medal · 2024 · 600+ students from 20+ countries</p></div></li>
+          <li><span class="medal silver" title="Silver">S</span><div><b>OMOUS, individual</b><p>Silver medal · 2024 · 5-hour individual contest</p></div></li>
+          <li><span class="medal silver" title="Silver">S</span><div><b>Vojtěch Jarník International Mathematical Competition</b><p>Silver-medal performance · 2025 · 11th of 48 in Category II</p></div></li>
+          <li><span class="medal gold" title="Winner">1</span><div><b>Student Math Problem Solving Competition, Bulgarian Academy of Sciences</b><p>Winner · 2025 · month-long contest, some problems with no known solution</p></div></li>
+          <li><span class="medal gold" title="Gold">G</span><div><b>Interuniversity Competition of Mathematics</b><p>First-place gold · 2023 &nbsp;·&nbsp; Silver · 2024</p></div></li>
+          <li><span class="medal silver" title="Silver">S</span><div><b>National Student Computer Mathematics Competition</b><p>Silver medals · 2023, 2024, 2025</p></div></li>
+          <li><span class="medal silver" title="Silver">S</span><div><b>National Student Mathematics Olympiad</b><p>Silver and bronze medals · 2023, 2024, 2025</p></div></li>
+          <li><span class="medal award" title="Award">★</span><div><b>FMI Codes Hackathon, “Code for Science”</b><p>Innovation Award by Wiser Technology · 2025 · for ASOCIAL</p></div></li>
+        </ul>
+        <p class="many-more">…and many more medals from national olympiads.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEACHING ============ -->
+  <section class="wrap section" id="teaching">
+    <h2>Teaching</h2>
+    <p class="kicker">Head Teaching Assistant · Sofia University · 2023 – 2026</p>
+    <p class="teaching-intro">I taught the exercise sessions for every course below, for <strong>more than 350 undergraduates</strong>, working with 10+ professors across 5 departments. I also prepared the university mathematics team for international competitions.</p>
+    <div class="course-group">
+      <ol class="course-list">
+          <li><span class="course">Calculus I</span><span class="with">with Prof. Parvan Parvanov, Vice-Rector of Sofia University</span></li>
+          <li><span class="course">Calculus II</span><a class="notes" href="https://github.com/violeta-kastreva/calculus-teaching-notes">notes</a><span class="with">with Prof. Parvan Parvanov, Vice-Rector of Sofia University</span></li>
+          <li><span class="course">Algebra</span><a class="notes" href="https://github.com/violeta-kastreva/algebra-notes-SE">notes</a><span class="with">with Prof. Maya Stoyanova, Dean of FMI</span></li>
+          <li><span class="course">Abstract Algebra</span><a class="notes" href="https://github.com/violeta-kastreva/abstract-algebra-teaching-notes">notes</a><span class="with">with Prof. Maya Stoyanova, Dean of FMI</span></li>
+          <li><span class="course">Linear Algebra</span><a class="notes" href="https://github.com/violeta-kastreva/linear-algebra-teaching-notes">notes</a></li>
+          <li><span class="course">Probability &amp; Statistics</span><a class="notes" href="https://github.com/violeta-kastreva/probability-and-statistics-teaching-notes">notes</a></li>
+          <li><span class="course">Discrete Mathematics &amp; Automata Theory</span><a class="notes" href="https://github.com/violeta-kastreva/automata-theory-teaching-notes">notes</a></li>
+          <li><span class="course">Competitive Mathematics</span></li>
+          <li><span class="course">Programming in C++</span><a class="notes" href="https://github.com/violeta-kastreva/Introduction-to-programming-2023-2024">notes</a></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="wrap section" id="projects">
+    <h2>Side Quest Projects</h2>
+    <div class="cards">
+      <a class="card" href="https://github.com/violeta-kastreva/ASOCIAL">
+        <h3>ASOCIAL</h3>
+        <p>A multi-agent simulation where LLM-powered personas interact in a synthetic social network, used to study emergent behaviour. Innovation Award at FMI Codes 2025.</p>
+        <span class="stack">LLM agents · Python</span>
+      </a>
+      <a class="card" href="https://github.com/violeta-kastreva/rna-3d-folding-prediction">
+        <h3>RNA 3D folding</h3>
+        <p>RibonanzaNet3D, an AlphaFold-inspired transformer that predicts RNA 3D structure from residue sequences (Stanford RNA 3D Folding challenge).</p>
+        <span class="stack">PyTorch · Transformers</span>
+      </a>
+      <a class="card" href="https://github.com/violeta-kastreva/LLM-EN-BG-Translator">
+        <h3>EN→BG translation model</h3>
+        <p>A transformer decoder that completes English sentences and then translates them into Bulgarian. Trained on 180k sentence pairs, BLEU above 35.</p>
+        <span class="stack">PyTorch · NLP</span>
+      </a>
+      <a class="card" href="https://github.com/violeta-kastreva/citadel-datathon">
+        <h3>Energy volatility forecasting</h3>
+        <p>For the Citadel Datathon: does gasoline price volatility predict energy-sector returns? VAR models, Granger causality and ensembles.</p>
+        <span class="stack">Time series · Statistics</span>
+      </a>
+      <a class="card" href="https://github.com/violeta-kastreva/vertex-cover-np-c-formal-proof">
+        <h3>Formal proof of Vertex Cover NP-completeness</h3>
+        <p>A machine-checked reduction from Clique to Vertex Cover in the Coq proof assistant. To my knowledge, no formal proof of this was available at the time.</p>
+        <span class="stack">Coq · Complexity theory</span>
+      </a>
+      <a class="card" href="https://github.com/violeta-kastreva/pop-lyrics-creator">
+        <h3>Pop lyrics generator</h3>
+        <p>GPT-2 fine-tuned to write lyrics in the style of pop artists, with experiments on sampling temperature.</p>
+        <span class="stack">GPT-2 · Fine-tuning</span>
+      </a>
+      <a class="card" href="https://github.com/violeta-kastreva/predicting-music-genres">
+        <h3>Song genre classifier</h3>
+        <p>Classifying songs by genre from their lyrics with Naive Bayes, logistic regression, SVMs and random forests.</p>
+        <span class="stack">scikit-learn</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ SERVICE ============ -->
+  <section class="wrap section" id="service">
+    <h2>Leadership &amp; service</h2>
+    <ul class="service">
+      <li><b>Member, Student Council of Sofia University</b> <span class="muted">2024 – 2026</span><p>Supervisory Board, Public Relations and Foreign Affairs committees. Organised student initiatives and international outreach.</p></li>
+      <li><b>Member, Faculty Council, Faculty of Mathematics and Informatics</b> <span class="muted">2024 – 2026</span><p>Took part in curriculum reform and academic policy affecting 2,000+ students.</p></li>
+      <li><b>University Mentor</b> <span class="muted">2024 – 2026</span><p>Mentored first-year students and organised orientation activities.</p></li>
+      <li><b>Founder &amp; organiser, Informatics and Mathematics Club</b> <span class="muted">2024 –</span><p>Invites lecturers to speak to students passionate about informatics and mathematics.</p></li>
+      <li><b>UNICEF volunteer</b> <span class="muted">2018 – 2021</span><p>Gave cybersecurity lectures to children.</p></li>
+    </ul>
+  </section>
+
+  <!-- ============ SKILLS + PERSONAL ============ -->
+  <section class="wrap section" id="skills">
+    <div>
+      <h2>Skills</h2>
+      <dl class="skills">
+        <dt>Languages</dt><dd>Python, C++, C#, Java, SQL, TypeScript, R</dd>
+        <dt>ML</dt><dd>PyTorch, TensorFlow, NumPy, pandas, scikit-learn</dd>
+        <dt>Tools</dt><dd>Linux, Git, Azure, PostgreSQL, Coq, LaTeX</dd>
+        <dt>Maths</dt><dd>Competitive mathematics, algorithms, complexity theory, probability &amp; statistics</dd>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="wrap contact" id="contact">
+    <h2>Get in touch</h2>
+    <a class="btn btn-primary js-mail" href="#contact" data-u="vkastreva" data-d="ethz.ch">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg>
+      Email me
+    </a>
+  </section>
+
+</main>
+
+<footer class="footer wrap">
+  <span>© <span id="year">2026</span> Violeta Kastreva · Zurich, Switzerland</span>
+  <a href="#top">Back to top ↑</a>
+</footer>
+
+<script src="script.js?v=2"></script>
+</body>
+</html>
