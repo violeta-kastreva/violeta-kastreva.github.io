@@ -7,9 +7,9 @@
   --ink-2: #4A4660;
   --ink-3: #7D7994;
   --line: #E7E3EC;
-  --accent: #B3245E;
+  --accent: #A65270;
   --accent-ink: #FFFFFF;
-  --accent-soft: #FBEAF1;
+  --accent-soft: #F5E8EC;
   --chip: #F2EFF6;
   --gold: #C9971C;
   --silver: #8E96A3;
@@ -30,9 +30,9 @@
     --ink-2: #C3BED3;
     --ink-3: #8F8AA3;
     --line: #2E2C40;
-    --accent: #F0709F;
-    --accent-ink: #1A0B12;
-    --accent-soft: #3A1D2C;
+    --accent: #E4A3B8;
+    --accent-ink: #2A1520;
+    --accent-soft: #3A2631;
     --chip: #262438;
     --gold: #E2B547;
     --silver: #AEB6C2;
@@ -48,9 +48,9 @@
   --ink-2: #C3BED3;
   --ink-3: #8F8AA3;
   --line: #2E2C40;
-  --accent: #F0709F;
-  --accent-ink: #1A0B12;
-  --accent-soft: #3A1D2C;
+  --accent: #E4A3B8;
+  --accent-ink: #2A1520;
+  --accent-soft: #3A2631;
   --chip: #262438;
   --gold: #E2B547;
   --silver: #AEB6C2;
@@ -63,11 +63,11 @@
 html { scroll-behavior: smooth; scroll-padding-top: 72px; -webkit-text-size-adjust: 100%; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
-:root { --glow-1: rgba(240, 112, 159, .30); --glow-2: rgba(232, 150, 220, .26); --glow-3: rgba(245, 140, 190, .26); }
+:root { --glow-1: rgba(190, 112, 140, .30); --glow-2: rgba(214, 160, 190, .28); --glow-3: rgba(200, 130, 155, .26); }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) { --glow-1: rgba(240, 112, 159, .24); --glow-2: rgba(200, 90, 170, .16); --glow-3: rgba(240, 112, 159, .15); }
+  :root:not([data-theme="light"]) { --glow-1: rgba(214, 140, 168, .24); --glow-2: rgba(170, 100, 140, .18); --glow-3: rgba(214, 140, 168, .15); }
 }
-:root[data-theme="dark"] { --glow-1: rgba(240, 112, 159, .24); --glow-2: rgba(200, 90, 170, .16); --glow-3: rgba(240, 112, 159, .15); }
+:root[data-theme="dark"] { --glow-1: rgba(214, 140, 168, .24); --glow-2: rgba(170, 100, 140, .18); --glow-3: rgba(214, 140, 168, .15); }
 
 body {
   margin: 0;
@@ -139,7 +139,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   :root:not([data-theme="light"]) .theme-toggle .i-sun { display: none; }
   :root:not([data-theme="light"]) .theme-toggle .i-moon { display: block; }
 }
-@media (max-width: 720px) {
+@media (max-width: 900px) {
   .topbar-inner { gap: 10px; }
   .brand { display: none; }
   .nav { margin-left: 0; flex: 1; }
