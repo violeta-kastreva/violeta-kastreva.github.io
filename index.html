@@ -246,7 +246,7 @@
         <div>
           <h3>Tokenisation over Bounded Alphabets is Hard</h3>
           <p class="authors"><b>Violeta Kastreva</b>*, P. Whittington*, D. Komm, T. Pimentel</p>
-          <p class="abstract">Shows that finding an optimal tokeniser is NP-complete for both direct and bottom-up (BPE-style) tokenisation, even when the alphabet is binary or unary, and that greedy BPE-style tokenisation has an unbounded approximation ratio over unary alphabets.</p>
+          <p class="abstract">Shows that finding a compression-optimal tokeniser is NP-complete and APX-hard already over binary alphabets, for both direct and bottom-up (BPE-style) tokenisation, and that direct tokenisation stays strongly NP-complete even over a unary alphabet. The hardness of tokenisation is not an artifact of large alphabets.</p>
           <p class="pub-links">
             <a href="https://openreview.net/forum?id=Xhf9YqwlM4">Paper</a>
             <a href="https://violeta-kastreva.github.io/tokenisation-over-bounded-alphabets-is-hard/">Project page</a>
@@ -258,7 +258,7 @@
         <div>
           <h3>How Correct Is Your Answer? A Semantic Correctness Framework for Open QA Evaluation</h3>
           <p class="authors">E. Yotkova*, <b>Violeta Kastreva</b>*, P. Velkov, H. Boyanov, D. Dimitrov, P. Nakov, I. Koychev</p>
-          <p class="abstract">A framework and taxonomy for judging the semantic correctness of open-ended answers, going beyond string matching when evaluating question-answering systems.</p>
+          <p class="abstract">Introduces an eight-class taxonomy of answer correctness, two benchmarks (CAP-Correctness and CAP-Statements), and CAP, an NLI-based metric for open-ended QA that outperforms established baselines.</p>
           <p class="pub-links">
             <a href="https://arxiv.org/abs/2609.01369">Paper</a>
             <a href="https://elitsay.github.io/EMNLP-2026-How-Correct-Is-Your-Answer-/">Project page</a>
@@ -266,11 +266,11 @@
         </div>
       </li>
       <li class="pub">
-        <div class="venue"><span class="tag">SemEval 2026</span><span class="sub">ACL workshop</span></div>
+        <div class="venue"><span class="tag">SemEval</span><span class="sub">ACL 2026 workshop</span></div>
         <div>
           <h3>Lightweight Detection of LLM-Generated Code via Stylometric Signals</h3>
           <p class="authors">E. Yotkova*, <b>Violeta Kastreva</b>*, D. Dimitrov, I. Koychev, P. Nakov</p>
-          <p class="abstract">A fast detector for machine-generated code built on stylometric features, AST-based structural cues and a custom programming-language identification pipeline.</p>
+          <p class="abstract">A lightweight detector for machine-generated code (SemEval-2026 Task 13) that combines length-robust stylometric features, a programming-language classifier and a shallow decision tree. It trains on a CPU and runs almost instantly.</p>
           <p class="pub-links">
             <a href="https://aclanthology.org/2026.semeval-1.275/">Paper</a>
           </p>
@@ -328,7 +328,6 @@
         <div class="what">
           <h3>Research Assistant <span class="at">Sofia University · with Prof. Preslav Nakov &amp; Prof. Ivan Koychev</span></h3>
           <ul>
-            <li>Built claim-checking pipelines to flag AI-generated text and unsupported claims in research manuscripts.</li>
             <li>Developed an LLM-generated code detector from stylometric features (SemEval, ACL 2026 workshop).</li>
             <li>Worked on <span class="sc">Open-VEQA</span>, a multilingual and multimodal benchmark for open-ended visual question answering.</li>
             <li>Studied when different transformers implement the same algorithm, as well as cross-seed representation alignment and downstream transfer in language models.</li>
@@ -340,8 +339,7 @@
         <div class="what">
           <h3>Summer Student Research Fellow <span class="at">ETH Zurich · Algorithms &amp; Didactics group, Prof. Dennis Komm</span></h3>
           <ul>
-            <li>Proved NP-completeness of optimal direct and bottom-up tokenisation (ICLR 2026), including weak NP-completeness for unary alphabets.</li>
-            <li>Showed that greedy BPE-style tokenisation has an unbounded approximation ratio over unary alphabets.</li>
+            <li>Proved that optimal direct and bottom-up tokenisation are NP-complete and APX-hard over binary alphabets, and that direct tokenisation is strongly NP-complete over unary alphabets (ICLR 2026).</li>
             <li>Worked on the competitive ratio of unbounded online knapsack with removal, and joined a workshop on open problems with researchers from 5+ universities.</li>
           </ul>
         </div>
