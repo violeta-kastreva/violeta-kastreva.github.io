@@ -425,3 +425,11 @@ a.quiet {
   text-underline-offset: 3px;
 }
 a.quiet:hover { color: var(--accent); text-decoration-color: var(--accent); }
+
+/* little cat after "cats" in the intro */
+.cat-inline {
+  display: inline-block; width: 1.15em; height: 1.15em;
+  vertical-align: -0.2em; margin-left: .25em;
+  transition: transform .2s ease;
+}
+.cat-inline:hover { transform: rotate(-12deg) scale(1.15); }
